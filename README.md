@@ -3,7 +3,5 @@ This repository contains all the nets that I have trained. This included Leela C
 
 If you have any questions, please let me know. Otherwise, you can download any nets here and play or test yourself.
 
-
 # Elite Leela
 Elite Leela is a project derived from Leela Chess Zero, where Leela was trained using the 19.7 million games from the Lichess Elite Database created by nikonoel from Lichess.
-
