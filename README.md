@@ -13,6 +13,7 @@ Figure 1: A test match carried out by me between Jellyfish 1.1 and Elite Leela
 
 ![Test Match 1](https://github.com/CallOn84/LeelaNets/assets/55154899/0f37e8ce-7ee7-41e2-94e6-6f9d279fcd7c)
 ![Test Match 2](https://github.com/CallOn84/LeelaNets/assets/55154899/af5c81e5-2556-4602-994d-262932839256)
+
 Figure 2: A test match by NickIsntHere on the Leela Chess Zero Discord server, where he put several engines and Leela nets against Elite Leela. Based on CCRL rating and performance, it's rated at least 3350 on a GTX 1660 Super.
 
 # Maia 2200
