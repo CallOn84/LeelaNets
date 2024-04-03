@@ -25,9 +25,11 @@ Two tests were conducted on Maia 2200. The first test was through a policy tourn
 The version of Leela Chess Zero used for the policy tournament was "0.31.0-dev+git.7532768 built Mar 6 2024", running on a Ryzen 5 5600X and an RTX 3070. Both models were given a 12-ply opening book made by Chad in the Leela Chess Zero's Discord server, which has 10,000 of the most frequently played opening lines with an 86.76% coverage of total games played by humans over-the-board and in correspondence chess, and both models played the same opening line using `--mirror-openings=true`. `--policy-mode-size=12` is the number of games per thread, -`-parallelism=12` is the number of threads available for the tournament, and `--backend=multiplexing` allows to construct larger batches from multiple games, among other things. Both models were given 3-4-5, 6-dtz, and 6-wdl syzygy tablebases for the endgame.
 
 ![Elo Rating of Maia 2200 Against Maia 1900 Over Time (10k to 400k)](https://github.com/CallOn84/LeelaNets/assets/55154899/1eb455b0-c6e5-4356-842b-7c5179b8a210)
+
 Figure 1: A line chart showing the Elo (Ordo) rating of Maia 2200 over time, from 10k to the 400k model.
 
 The second test was through the testing data set that the Maia Chess developers put together to calculate the move-matching accuracy of their models. The dataset can be found in their GitHub repository, but it essentially contains 10,000 per rating division of 100, totalling to 150,000 games. Using 8 threads and a move time of 10, the model ran through all the move within the dataset, outputting a move for each row, and is recorded in a new csv.bz2 file. The testing dataset and the results dataset were read and compared, and a accuracy percentage was calculated for each rating division of how many moves did the model get correct out of all the moves it ran through.
 
 ![image](https://github.com/CallOn84/LeelaNets/assets/55154899/41c240b2-9cfe-4f9f-b47e-e5580b5bbb8f)
+
 Figure 2: The percentage of correct moves in every rating divison.
