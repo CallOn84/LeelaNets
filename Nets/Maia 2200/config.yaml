@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+name: maia-2200
+display_name: "Maia 2200"
+engine: "C:\\Users\\vieta\\Desktop\\Lc0\\Lc0 Testing\\Lc0 v0.31.0-dev\\lc0.exe"
+options:
+    nodes: 1
+    weightsPath: "C:\\Users\\vieta\\Desktop\\Lc0\\Lc0 Testing\\Lc0 v0.31.0-dev\\maia-2200.pb.gz"
+    movetime: 10
+    threads: 8
+...
