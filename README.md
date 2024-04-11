@@ -6,7 +6,7 @@ If you have any questions, please let me know. Otherwise, you can download any n
 # Elite Leela
 Elite Leela is a project derived from Leela Chess Zero, where Leela was trained using the 19.7 million games from the Lichess Elite Database created by nikonoel from Lichess.
 
-There's a Lichess Bot for Elite Leela, which you can find here: [https://lichess.org/@/EliteLeela](https://lichess.org/@/EliteLeela). It hasn't been active for a while, but you can check the games it has played with other users, as well as the 1,000 game match between it and Jellyfish 1.1 through our eight studies.
+There's a Lichess Bot for Elite Leela, which you can find here: [https://lichess.org/@/EliteLeela](https://lichess.org/@/EliteLeela). It hasn't been active for a while, but you can check the games it has played with other users and the 1,000-game match between it and Jellyfish 1.1 through our eight studies.
 
 ![Screenshot 2024-03-02 153042](https://github.com/CallOn84/LeelaNets/assets/55154899/e1f121e5-11dc-4c58-8ceb-6a105e4fbad8)
 Figure 1: A test match carried out by me between Jellyfish 1.1 and Elite Leela
@@ -29,6 +29,8 @@ The version of Leela Chess Zero used for the policy tournament was "0.31.0-dev+g
 Figure 1: A line chart showing the Elo (Ordo) rating of Maia 2200 over time, from 10k to the 400k model.
 
 The second test was conducted using the testing dataset that the Maia Chess developers put together to calculate the move-matching accuracy of their models. The dataset can be found in their GitHub repository, but it contains 10,000 per rating division of 100, totalling 150,000 games. Using 8 threads and a move time of 10, the model ran through all the moves within the dataset, outputting a move for each row, and is recorded in a new csv.bz2 file. The testing and results datasets were read and compared, and an accuracy percentage was calculated for each rating division of how many moves the model got correct out of all the moves it ran through.
+
+You can download the results of the move-matching accuracy test here: [https://drive.google.com/file/d/1qTXlWffwJcQzFT0WcxuHY4nk_vcCCfvL/view?usp=sharing]
 
 ![image](https://github.com/CallOn84/LeelaNets/assets/55154899/41c240b2-9cfe-4f9f-b47e-e5580b5bbb8f)
 
