@@ -30,8 +30,18 @@ Figure 1: A line chart showing the Elo (Ordo) rating of Maia 2200 over time, fro
 
 The second test was conducted using the testing dataset that the Maia Chess developers put together to calculate the move-matching accuracy of their models. The dataset can be found in their GitHub repository, but it contains 10,000 per rating division of 100, totalling 150,000 games. Using 8 threads and a move time of 10, the model ran through all the moves within the dataset, outputting a move for each row, and is recorded in a new csv.bz2 file. The testing and results datasets were read and compared, and an accuracy percentage was calculated for each rating division of how many moves the model got correct out of all the moves it ran through.
 
-You can download the results of the move-matching accuracy test here: [https://drive.google.com/file/d/1qTXlWffwJcQzFT0WcxuHY4nk_vcCCfvL/view?usp=sharing]
-
 ![image](https://github.com/CallOn84/LeelaNets/assets/55154899/41c240b2-9cfe-4f9f-b47e-e5580b5bbb8f)
 
 Figure 2: The percentage of correct moves in every rating division.
+
+# (NEW!) Elite Leela v2.0.2
+Elite Leela v2.02 is an updated version of the original Elite Leela project from 2022. The model uses the same training data from the Lichess Elite Database, updated to the latest games, and trained on the new transformer model architecture that Leela Chess Zero employed. You can read more about the transformer model here: [https://lczero.org/blog/2024/02/transformer-progress/].
+
+Elite Leela v2.0.0 and v2.0.1 won't be released, as they're considered failures during testing and practical applications through the Elite Leela lichess account, which you can find here: [https://lichess.org/@/EliteLeela]
+
+To determine the strength of Elite Leela v2.0.2, I ran a test match against Patricia 4. Patricia 4 is an engine created by Adam Kulju, touting itself as the "most aggressive chess engine the world has ever seen". For the test match, Patricia 4 was given 4 threads and 1 GiB of Hash, per tcec-chess.com's hardware control variables that they use for CCRL engines. The version of Leela Chess Zero used for the policy tournament was "v0.31.0-dag+git.dirty built Jan 15 2025", and both engines were running on a Ryzen 5 5600X, 32GB of 3600MHz CL16 RAM, and an RTX 3070. Both models were given a 12-ply opening book made by Chad in the Leela Chess Zero's Discord server, which has 10,000 of the most frequently played opening lines with an 86.76% coverage of total games played by humans over-the-board and in correspondence chess. Elite Leela v2.0.2 was only given 3-4-5, 6-dtz, and 6-wdl syzygy tablebases, as Patricia 4 didn't accept tablebases as part of engine commands, but tablebases were given to Cute Chess for it to use, hopefully mitigating any disadvantage Patricia 4 may have gotten from not having it.
+
+The time control was 2 minutes + 1 second increment, mimicking the test conditions of CCRL's blitz runs. 
+
+![Screenshot 2025-02-03 233116](https://github.com/user-attachments/assets/ed9b7e94-e3fc-4473-ae2b-c8d9f1926503)
+Figure 1: A test match carried out by me between Patricia 4 and Elite Leela v2.0.2
