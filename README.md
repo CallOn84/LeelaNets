@@ -35,7 +35,7 @@ The second test was conducted using the testing dataset that the Maia Chess deve
 Figure 2: The percentage of correct moves in every rating division.
 
 # (NEW!) Elite Leela v2.0.2
-Elite Leela v2.02 is an updated version of the original Elite Leela project from 2022. The model uses the same training data from the Lichess Elite Database, updated to the latest games, and trained on the new transformer model architecture that Leela Chess Zero employed. You can read more about the transformer model here: [https://lczero.org/blog/2024/02/transformer-progress/].
+Elite Leela v2.0.2 is an updated version of the original Elite Leela project from 2022. The model uses the same training data from the Lichess Elite Database, updated to the latest games, and trained on the new transformer model architecture that Leela Chess Zero employed. You can read more about the transformer model here: [https://lczero.org/blog/2024/02/transformer-progress/].
 
 Elite Leela v2.0.0 and v2.0.1 won't be released, as they're considered failures during testing and practical applications through the Elite Leela lichess account, which you can find here: [https://lichess.org/@/EliteLeela]
 
@@ -43,7 +43,7 @@ To determine the strength of Elite Leela v2.0.2, I ran a test match against Patr
 
 The version of Leela Chess Zero used for the policy tournament was "v0.31.0-dag+git.dirty built Jan 15 2025", and both engines were running on a Ryzen 5 5600X, 32GB of 3600MHz CL16 RAM, and an RTX 3070. Both models were given a 12-ply opening book made by Chad in the Leela Chess Zero's Discord server, which has 10,000 of the most frequently played opening lines with an 86.76% coverage of total games played by humans over-the-board and in correspondence chess. 
 
-Elite Leela v2.0.2 was only given 3-4-5, 6-dtz, and 6-wdl syzygy tablebases, as Patricia 4 doesn't accept tablebases as part of engine commands. Still, tablebases were given to Cute Chess for it to use, hopefully mitigating any disadvantage Patricia 4 may have gotten from not having it.
+Elite Leela v2.0.2 was only given 3-4-5, 6-dtz, and 6-wdl syzygy tablebases, as Patricia 4 doesn't accept tablebases as part of engine commands. Still, tablebases were given to Cute Chess for its use, hopefully mitigating any disadvantage Patricia 4 may have gotten from not having it.
 
 The time control was 2 minutes + 1 second increment, mimicking the test conditions of CCRL's blitz runs. 
 
